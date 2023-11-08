@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina login responsiva</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="h-screen flex justify-center items-center">
+        
+        <div class="flex">
+            <div class="container w-80 flex flex-col items-center px-[25px] py-[22px] shadow-xl rounded-md">
+            
+                <div class="flex items-center justify-center gap-[10px] border-b-2 w-full py-3">
+    
+                    <img class="w-10 h-10" src="./assets/images/user-cicle.svg" alt="Icon logar">
+                    <h1 class="text-[20] text-white font-bold">Logar</h1>
+    
+                </div>
+                
+                <form class="w-full mt-3" action="#">
+                    
+                    <div class="flex flex-col gap-3">
+    
+                        <input type="email" placeholder="Email" 
+                        class="rounded py-1 px-3 text-xs font-medium outline-none">
+                        <input type="password" placeholder="senha" 
+                        class="rounded rounded py-1 px-3 text-xs font-medium outline-none">
+    
+                        <div class="flex justify-between items-center text-xs text-white font-medium">
+                            <span class="flex items-center">
+                                <input type="checkbox" name="lembre-se" 
+                                class="mr-1 cursor-pointer">
+                                Lembre-se de mim
+                            </span>
+    
+                            <input type="button" value="recuperar senha" class="cursor-pointer">
+                        </div>
+                        
+                        <input type="submit" value="CONTINUE"
+                        class="px-8 py-3 bg-[#E7862A] text-xs rounded cursor-pointer text-white">
+                    </div>
+                
+                    <div class="register text-xs mt-4">
+                        <div class="flex flex-col items-center text-white">
+                            <div>
+                                <span class="font-medium">
+                                    Não tem uma conta? 
+                                </span>
+                                <b class="text-[#0581E6] cursor-pointer">Criar</b>
+                            </div>
+    
+                            <div class="flex justify-between items-center gap-3 w-[150px] mt-4">
+                                <span class="h-[2px] bg-slate-200 inline-block w-full"></span>
+                                ou
+                                <span class="h-[2px] bg-slate-200 inline-block w-full"></span>
+                            </div>
+                        </div>
+    
+                        <div class="flex flex-col justify-center gap-3 mt-4">
+                            <button class="flex items-center justify-center py-2 bg-white gap-2 rounded">
+                                <img src="./assets/images/icon _google_.svg" alt=""
+                                class="w-6 h-6">
+                                Logar com Google
+                            </button>
+                            <button class="flex items-center justify-center py-2 bg-white gap-2 rounded">
+                                <img src="./assets/images/icon _Github_.svg" alt=""
+                                class="w-6 h-6">
+                                Logar com Github
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="side-container hidden bg-white lg:flex items-center justify-center ">
+                <img src="./assets/images/back.png" alt="" 
+                class="max-w-xs max-h-80">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
